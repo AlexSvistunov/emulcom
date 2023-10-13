@@ -1,0 +1,80 @@
+.burger {
+  @include burger;
+
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--light-color);
+  padding: 41px 0;
+  background-color: var(--bg-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1344px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+
+  &__logo {
+    display: inline-block;
+    width: 220px;
+    height: 40px;
+    background-image: url("../../img/logo.svg");
+    @include bg-cover;
+  }
+
+
+  &__user-nav {
+    display: flex;
+    gap: 40px;
+  }
+
+
+
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.user-panel {
+  display: flex;
+  gap: 40px;
+
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    gap: 8px;
+  }
+
+
+}

@@ -1,0 +1,33 @@
+.hero {
+  color: var(--light-color);
+  background-color: var(--bg-color);
+  min-height: 830px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: right 0 top 0;
+
+  &__inner {
+    flex: 1 1 100%;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    & span {
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
